@@ -1,9 +1,13 @@
 import express from "express";
-import subjectRouters from "./route/subjects.js";
+import subjectRouters from "./routes/subjects.js";
 import cors from "cors";
 
 const app = express();
 const PORT = 8000;
+
+if (!process.env.FRONTEND_URL) {
+  throw new Error("FRONTEND_URL is not .env file");
+}
 app.use(
   cors({
     origin: process.env.FRONTEND_URL,
