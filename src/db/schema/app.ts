@@ -12,7 +12,8 @@ const timestapms = {
 
 /**
  * 담당 부서들
- * @ interger : 정수
+ * @ interger : 정수(숫자연산)
+ * @ varchar : 문자열(길이 변동이 심할떄)
  * @ primaryKey : 테이블 기본 키
  * @ generateAlwaysAsldentity : postgresSQL 에서 지원하는 최신 ID 생성 방식
  * @@ IDENTITY: 시스템이 자동으로 숫자를 생성
